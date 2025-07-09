@@ -53,7 +53,7 @@ describe("TokenFarm - Full Flow", function () {
     await network.provider.send("evm_setAutomine", [false]);
 
     const deposit1 = ethers.parseEther("100");
-    const deposit2 = ethers.parseEther("100");
+    const deposit2 = ethers.parseEther("300");
 
     await tokenFarm.connect(user1).deposit(deposit1);
     await tokenFarm.connect(user2).deposit(deposit2);

@@ -35,9 +35,11 @@ npx hardhat compile
 npx hardhat ignition deploy ignition/modules/TokenFarm.ts --network localhost
 ```
 
-En caso de error
+Comandos útiles en caso de error
 ```bash
 rm -rf artifacts cache ignition/deployments
+npx hardhat clean
+npx hardhat node
 npx hardhat compile
 npx hardhat ignition deploy ignition/modules/TokenFarm.ts --network localhost --reset
 ```
@@ -61,6 +63,12 @@ npx hardhat test
 
 Ejecutar el script para interactuar con el contrato:
 
+En forma automática
 ```bash
-npx hardhat run scripts/interact.ts
+npx hardhat run scripts/InteractAuto.ts
+```
+Paso a paso
+En forma automática
+```bash
+npx hardhat run scripts/InteractManual.ts
 ```

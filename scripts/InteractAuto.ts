@@ -47,6 +47,7 @@ async function main() {
   console.log("Minting LP tokens to user1...");
   await lpToken.connect(deployer).mint(user1.address, amountToStake);
 
+  console.log("user1", user1.address);
   const balance = await lpToken.balanceOf(user1.address);
   console.log("LP Token balance after mint:", ethers.formatUnits(balance, 18));
 
