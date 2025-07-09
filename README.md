@@ -63,12 +63,11 @@ npx hardhat test
 
 Ejecutar el script para interactuar con el contrato:
 
-En forma automática
+De forma automática
 ```bash
 npx hardhat run scripts/InteractAuto.ts
 ```
 Paso a paso
-En forma automática
 ```bash
 npx hardhat run scripts/InteractManual.ts
 ```
