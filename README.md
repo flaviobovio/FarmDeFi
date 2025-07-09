@@ -35,13 +35,11 @@ npx hardhat compile
 npx hardhat ignition deploy ignition/modules/TokenFarm.ts --network localhost
 ```
 
-Comandos útiles en caso de error
+En caso de error
 ```bash
-rm -rf artifacts cache ignition/deployments
-npx hardhat clean
-npx hardhat node
-npx hardhat compile
-npx hardhat ignition deploy ignition/modules/TokenFarm.ts --network localhost --reset
+rm -rf ignition/deployments
+npx hardhat ignition deploy ignition/modules/TokenFarm.ts --network localhost
+npx hardhat run scripts/InteractAuto.ts --network localhost
 ```
 
 
