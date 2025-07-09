@@ -15,8 +15,8 @@ Los usuarios también pueden reclamar las recompensas generadas durante el staki
 ## ⚙️ Instalación
 
 ```bash
-git clone https://github.com/flaviobovio/farm.git
-cd farm
+git clone https://github.com/flaviobovio/FarmDeFi.git
+cd FarmDeFi
 npm install
 ```
 
